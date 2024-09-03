@@ -1,0 +1,106 @@
+
+.projects-head {
+    /* background-color: black; */
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+
+    animation: reveal ease-in both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 20%;
+}
+.projects-main {
+    
+    /* background-color: black; */
+    /* height: 80rem; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    
+    animation: reveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 25%;
+    
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.project-box {
+    margin-bottom: 2rem;
+    height: 25rem;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 1.5rem;
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 100%, rgba(0,0,0,1) 100%);
+    color: white;
+    border: 2px solid white;
+    position: relative;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.visit-btn {
+    background-color: rgb(200, 250, 234);
+    color: black;
+    border-radius: .4rem;
+    padding: 1rem;
+    width: 10rem;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 1rem;
+
+    /* margin-top: 2rem; */
+}
+.visit-btn:hover {
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    transition: color, border-radius, background-color 0.8s;
+}
+
+@media screen and (max-width: 768px) {
+    .projects-main {
+        grid-template-columns: auto;
+    }
+    .project-box {
+       
+        height: 28rem;
+     
+        width: 18rem;
+        
+    }
+    .visit-btn {
+        margin-top: 1.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 600px) {
+    .projects-main {
+        grid-template-columns:  auto auto;
+    }
+    
+}
+
+/* @media screen and (min-width: 900px) {
+    .projects-main {
+        grid-template-columns:  auto auto auto; 
+    }
+    
+} */

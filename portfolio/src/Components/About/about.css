@@ -1,0 +1,122 @@
+.about-main {
+    /* background-color: black; */
+    height: 115rem;
+    animation: reveal ease-in both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 25%;
+
+
+}
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.about-main p {
+    font-size: 1.3rem;
+}
+
+.about-head {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.Education h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.Education {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.Education p {
+    margin-top: 1rem;
+    font-size: 1.3em;
+}
+
+.skills {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.skills h1 {
+    font-size: 2rem;
+}
+
+
+.skills h2 {
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+
+.skills-container-individual {
+    display: flex;
+}
+
+
+.skills-container-individual img {
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+}
+
+.certifications {
+    margin-top: 2rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .certifications h1 {
+    display: flex;
+    justify-content: center;
+} */
+
+.certifications p {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .skills-container-individual {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .about-main {
+        height: 150rem;
+    }
+
+    .about-main p {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .about-main {
+        height: 170rem;
+    }
+
+}

@@ -1,0 +1,24 @@
+.contact-main {
+    margin-top: 3rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.contact-main a{
+    font-size: 3rem;
+    margin: 1rem;    
+}
+
+.contact-main a:hover {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10%;
+    transition: background-color 0.5s;
+}
+
+.link a {
+    color: white;
+}

@@ -1,0 +1,53 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+.main-head {
+    color: whitesmoke;
+    margin: 2rem;
+}
+
+.input-add {
+    display: flex;
+    align-items: center;
+}
+
+.task-input {
+    resize: none;
+    width: 20rem;
+    height: 1rem;
+    padding: 1rem;
+    overflow: auto;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+.add-btn {
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    background-color: greenyellow;
+    /* font-weight: bold; */
+    font-size: 1.5rem;
+}
+.calendar-btn {
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: wheat;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.set-date {
+    color: aliceblue;
+    background-color: black;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 20rem;
+    align-items: center;
+    display: flex;
+}
